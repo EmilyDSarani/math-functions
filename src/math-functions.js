@@ -15,7 +15,7 @@ export function sum(a, b){
     let sumArray = [];
     let numOne = a;
     let numTwo = b;
-    let total = a + b;
+    let total = (a + b);
     sumArray.push(`The sum of ${numOne} and ${numTwo} is ${total}.`);
     return sumArray;
 }
