@@ -30,8 +30,13 @@ Write a function called multiply() that takes in two numbers as arguments and re
 */
 
 export function multiply(a, b) {
-
+    let multiArray = [];
+    let total = (a * b);
+    multiArray.push(`${total}.`);
+    multiArray.push(`The product of ${a} and ${b} is ${total}.`);
+    return multiArray;
 }
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
