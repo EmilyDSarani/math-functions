@@ -13,10 +13,9 @@ example and uses the values that were input into the function:
 
 export function sum(a, b){
     let sumArray = [];
-    let numOne = a;
-    let numTwo = b;
     let total = (a + b);
-    sumArray.push(`The sum of ${numOne} and ${numTwo} is ${total}.`);
+    sumArray.push(`${total}.`);
+    sumArray.push(`The sum of ${a} and ${b} is ${total}.`);
     return sumArray;
 }
 
