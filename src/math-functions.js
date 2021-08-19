@@ -11,8 +11,13 @@ example and uses the values that were input into the function:
 "The sum of 4 and 7 is 11."
 */
 
-export function sum(a, b) {
-
+export function sum(a, b){
+    let sumArray = [];
+    let numOne = a;
+    let numTwo = b;
+    let total = a + b;
+    sumArray.push(`The sum of ${numOne} and ${numTwo} is ${total}.`);
+    return sumArray;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
