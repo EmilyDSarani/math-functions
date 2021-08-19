@@ -14,7 +14,7 @@ example and uses the values that were input into the function:
 export function sum(a, b){
     let sumArray = [];
     let total = (a + b);
-    sumArray.push(`${total}.`);
+    sumArray.push(total);
     sumArray.push(`The sum of ${a} and ${b} is ${total}.`);
     return sumArray;
 }
@@ -32,7 +32,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 export function multiply(a, b) {
     let multiArray = [];
     let total = (a * b);
-    multiArray.push(`${total}.`);
+    multiArray.push(total);
     multiArray.push(`The product of ${a} and ${b} is ${total}.`);
     return multiArray;
 }
@@ -60,8 +60,16 @@ how to do this. However, you may continue to use the + operator for string conca
 */
 
 export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
-
+    let Array = [];
+    let sumtotal = sum((sum(a, b)[0]), c)[0];
+    let multitotal = multiply(multiply(a, b)[0], c)[0]; 
+    Array.push(sumtotal);
+    Array.push (multitotal);
+    Array.push(`${a} and ${b} and ${c} sum to ${sumtotal}.`);
+    Array.push(`The product of ${a} and ${b} and ${c} is ${multitotal}.`);
+    return Array;
 }
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
