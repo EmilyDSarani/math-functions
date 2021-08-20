@@ -120,7 +120,14 @@ you may continue to use the + operator for string concatenation.
 */
 
 export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
-
+    let Array = [];
+    let a = multArr[0];
+    let b = multArr[1];
+    let c = multArr[2];
+    let multtotal = multiply(multiply(a, b)[0], c)[0]; 
+    Array.push(multtotal);
+    Array.push(`The numbers ${a},${b},${c} have a product of ${multtotal}.`);
+    return Array;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
