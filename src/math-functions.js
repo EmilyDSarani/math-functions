@@ -148,7 +148,16 @@ This function should be dynamic, accepting an array of any length.
 */
 
 export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+    let Array = [];
+    let a = dynamicArray[0];
+    let b = dynamicArray[1];
+    let c = dynamicArray[2];
+    let d = dynamicArray[3];
+    let f = dynamicArray[4];
+    let multtotal = multiply(multiply(a, b)[0], (c, d)[0], f)[0]; 
+    Array.push(multtotal);
+    Array.push(`The numbers ${a},${b},${c},${d},${f} have a product of ${multtotal}.`);
+    return Array;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
