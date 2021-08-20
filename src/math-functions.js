@@ -94,9 +94,9 @@ export function sumArrayWithThreeNumbers(sumArr) {
     let a = sumArr[0];
     let b = sumArr[1];
     let c = sumArr[2];
-    let sumtotal = sum(a, b, c);
+    let sumtotal = sum((sum(a, b)[0]), c)[0];
     Array.push(sumtotal);
-    Array.push(`${a}, ${b}, ${c}, was passed in as an array of numbers and ${sumtotal} is their sum.`);
+    Array.push(`${a},${b},${c} was passed in as an array of numbers, and ${sumtotal} is their sum.`);
     return Array;
 }
 
