@@ -154,7 +154,7 @@ export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     let c = dynamicArray[2];
     let d = dynamicArray[3];
     let f = dynamicArray[4];
-    let multtotal = multiply(multiply(a, b)[0], (c, d)[0], f)[0]; 
+    let multtotal = multiply(multiply(a, b)[0], c)[0];  
     Array.push(multtotal);
     Array.push(`The numbers ${a},${b},${c},${d},${f} have a product of ${multtotal}.`);
     return Array;
